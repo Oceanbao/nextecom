@@ -33,7 +33,6 @@ type SIDEBAR_VIEWS =
 
 // reducers
 const openSidebar: CaseReducer<StateUI> = state => {
-  console.log('openSidebar')
   state.displaySidebar = true
 }
 
@@ -50,7 +49,6 @@ const closeDropdown: CaseReducer<StateUI> = state => {
 }
 
 const openModal: CaseReducer<StateUI> = state => {
-  console.log('openModal')
   state.displayModal = true
 }
 
