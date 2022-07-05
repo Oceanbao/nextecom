@@ -35,7 +35,7 @@ export async function getStaticProps({ params, locale, locales, preview }: GetSt
       relatedProducts,
       categories,
     },
-    revalidate: 200,
+    // revalidate: 200,
   }
 }
 

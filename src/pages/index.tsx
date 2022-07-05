@@ -27,7 +27,7 @@ export async function getStaticProps({ preview, locale, locales }: GetStaticProp
       brands,
       pages,
     },
-    revalidate: 60,
+    // revalidate: 60,
   }
 }
 

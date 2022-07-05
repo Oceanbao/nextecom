@@ -14,7 +14,7 @@ export async function getSearchStaticProps({ preview, locale, locales }: GetStat
       categories,
       brands,
     },
-    revalidate: 200,
+    // revalidate: 200,
   }
 }
 
