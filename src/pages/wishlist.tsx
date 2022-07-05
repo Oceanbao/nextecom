@@ -10,11 +10,11 @@ import rangeMap from '@lib/range-map'
 
 export async function getStaticProps({ preview, locale, locales }: GetStaticPropsContext) {
   // Disabling page if Feature is not available
-  // if (!process.env.COMMERCE_WISHLIST_ENABLED) {
-  //   return {
-  //     notFound: true,
-  //   }
-  // }
+  if (!process.env.COMMERCE_WISHLIST_ENABLED) {
+    return {
+      notFound: true,
+    }
+  }
 
   const config = { locale, locales }
   const pagesPromise = commerce.getAllPages({ config, preview })
